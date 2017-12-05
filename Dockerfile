@@ -26,6 +26,8 @@ RUN docker-php-ext-install mysqli
 RUN docker-php-ext-install curl
 RUN docker-php-ext-install tokenizer
 RUN docker-php-ext-install json
+
+RUN apt-get install -y libxslt-dev
 RUN docker-php-ext-install xsl
 
 RUN apt-get -y install zlib1g-dev
